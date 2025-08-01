@@ -1,0 +1,10 @@
+name: docker_build
+author: ctw04336
+description: Build Docker image using Dockerfile.jvm
+
+runs:
+  using: "composite"
+  steps:
+    - name: Build Docker image with timestamp tag
+      run: docker build . --file src/main/docker/Dockerfile.jvm --tag academy:$(date +%s)
+      shell: bash
