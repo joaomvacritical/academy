@@ -23,7 +23,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: ./.github/actions/maven_build
-    - uses : ./.github/actions/docker_build
+    - uses: ./.github/actions/docker_build
 
       with:
         path_dockerfile: src/main/docker/Dockerfile.jar
