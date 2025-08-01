@@ -26,7 +26,7 @@ jobs:
     - uses: ./.github/actions/docker_build
       with:
         path_dockerfile: src/main/docker/Dockerfile.jvm
-        image_name: ${{vars.DOCKERHUB_USERNAME}}/rack-booking-system
+        image_name: joaoamaro157/rack-booking-system
         tag_name: v1
 
 
