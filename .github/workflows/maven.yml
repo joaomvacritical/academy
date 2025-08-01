@@ -28,6 +28,11 @@ jobs:
         path_dockerfile: src/main/docker/Dockerfile.jvm
         image_name: ${{ vars.DOCKERHUB_USERNAME }}/rack-booking-system
         tag_name: v1
+    - uses: ./.github/actions/docker_push
+      with:
+         DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
+         DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+
 
 
 
