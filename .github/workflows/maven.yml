@@ -27,7 +27,7 @@ jobs:
 
       with:
         path_dockerfile: src/main/docker/Dockerfile.jar
-        image_name: ${{ vars.DOCKERHUB_USERNAME}}/rack-booking-system
+        image_name: ${{vars.DOCKERHUB_USERNAME}}/rack-booking-system
         tag_name: v1
 
 
